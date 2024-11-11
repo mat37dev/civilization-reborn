@@ -3,5 +3,7 @@
   "item.civilization-reborn.raw_pink_garnet": "Grenat rose brut",
 
   "block.civilization-reborn.pink_garnet_block": "Bloc de Grenat Rose",
-  "block.civilization-reborn.raw_pink_garnet_block": "Bloc de grenat rose brut"
+  "block.civilization-reborn.raw_pink_garnet_block": "Bloc de grenat rose brut",
+
+  "itemgroup.civilization-reborn.test_pink_garnet": "Catégorie Test"
 }
