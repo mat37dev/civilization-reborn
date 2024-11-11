@@ -1,3 +1,7 @@
 {
-  "item.civilization-reborn.pink_garnet": "Pink Garnet"
+  "item.civilization-reborn.pink_garnet": "Pink Garnet",
+  "item.civilization-reborn.raw_pink_garnet": "Raw pink garnet",
+
+  "block.civilization-reborn.pink_garnet_block": "Block of Pink Garnet",
+  "block.civilization-reborn.raw_pink_garnet_block": "Block of Raw Pink Garnet"
 }

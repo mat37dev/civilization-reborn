@@ -19,8 +19,9 @@ import java.util.function.Function;
 public class CommonItems {
     //Création et enregistrement d'un item
     public static final Item PINK_GARNET = registerItem("pink_garnet",Item::new, new Item.Settings());
+    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",Item::new, new Item.Settings());
 
-    public static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
+    private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CivilizationReborn.MOD_ID, name));
         return Items.register(registryKey, factory, settings);
     }
@@ -31,6 +32,7 @@ public class CommonItems {
         //On ajoute les items dans l'inventaire créatif
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(PINK_GARNET);
+            entries.add(RAW_PINK_GARNET);
         });
     }
 }

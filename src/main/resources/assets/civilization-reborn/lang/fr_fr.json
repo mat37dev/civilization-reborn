@@ -1,3 +1,7 @@
 {
-  "item.civilization-reborn.pink_garnet": "Grenat rose"
+  "item.civilization-reborn.pink_garnet": "Grenat rose",
+  "item.civilization-reborn.raw_pink_garnet": "Grenat rose brut",
+
+  "block.civilization-reborn.pink_garnet_block": "Bloc de Grenat Rose",
+  "block.civilization-reborn.raw_pink_garnet_block": "Bloc de grenat rose brut"
 }

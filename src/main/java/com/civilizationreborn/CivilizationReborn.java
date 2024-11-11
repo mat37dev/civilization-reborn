@@ -1,5 +1,6 @@
 package com.civilizationreborn;
 
+import com.civilizationreborn.block.CommonBlocks;
 import com.civilizationreborn.item.CommonItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class CivilizationReborn implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		CommonItems.registerCommonItems();
+		CommonBlocks.registerCommonBlocks();
 	}
 }
