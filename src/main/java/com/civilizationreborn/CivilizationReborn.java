@@ -1,5 +1,8 @@
 package com.civilizationreborn;
 
+import com.civilizationreborn.block.CommonBlocks;
+import com.civilizationreborn.item.CommonItems;
+import com.civilizationreborn.item.ItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +14,8 @@ public class CivilizationReborn implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		CommonItems.registerCommonItems();
+		CommonBlocks.registerCommonBlocks();
+		ItemGroups.registerItemGroups();
 	}
 }
