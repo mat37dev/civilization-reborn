@@ -1,6 +1,9 @@
 {
   "item.civilization-reborn.pink_garnet": "Grenat rose",
   "item.civilization-reborn.raw_pink_garnet": "Grenat rose brut",
+  "item.civilization-reborn.staff_creation_item": "Bâton de la création",
+  "item.civilization-reborn.message_create_village": "Vous venez de créer un village.",
+  "item.civilization-reborn.message_create_village_error_block": "Vous ne pouvez utiliser cette baguette que sur un bloc d'or.",
 
   "block.civilization-reborn.pink_garnet_block": "Bloc de Grenat Rose",
   "block.civilization-reborn.raw_pink_garnet_block": "Bloc de grenat rose brut",

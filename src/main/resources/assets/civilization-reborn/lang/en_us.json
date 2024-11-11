@@ -1,6 +1,9 @@
 {
   "item.civilization-reborn.pink_garnet": "Pink Garnet",
   "item.civilization-reborn.raw_pink_garnet": "Raw pink garnet",
+  "item.civilization-reborn.staff_creation_item": "Staff of Creation",
+  "item.civilization-reborn.message_create_village": "You have just created a village.",
+  "item.civilization-reborn.message_create_village_error_block": "You can only use this wand on a gold block.",
 
   "block.civilization-reborn.pink_garnet_block": "Block of Pink Garnet",
   "block.civilization-reborn.raw_pink_garnet_block": "Block of Raw Pink Garnet",

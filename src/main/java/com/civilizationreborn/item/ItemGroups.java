@@ -20,6 +20,7 @@ public class ItemGroups {
                         entries.add(CommonItems.RAW_PINK_GARNET);
                         entries.add(CommonBlocks.PINK_GARNET_BLOCK);
                         entries.add(CommonBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(CommonItems.STAFF_CREATION_ITEM);
                     })).
 
                     build());
