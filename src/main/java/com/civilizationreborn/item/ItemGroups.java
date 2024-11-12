@@ -21,6 +21,7 @@ public class ItemGroups {
                         entries.add(CommonBlocks.PINK_GARNET_BLOCK);
                         entries.add(CommonBlocks.RAW_PINK_GARNET_BLOCK);
                         entries.add(CommonItems.STAFF_CREATION_ITEM);
+                        entries.add(CommonItems.CAULIFLOWER);
                     })).
 
                     build());

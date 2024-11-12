@@ -2,29 +2,41 @@ package com.civilizationreborn.item;
 
 import com.civilizationreborn.CivilizationReborn;
 import com.civilizationreborn.item.artefact.StaffCreationItem;
+import com.civilizationreborn.item.food.CommonFoodComponents;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.ConsumableComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
+import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+
 import java.util.function.Function;
 
 
 public class CommonItems {
     //Création et enregistrement d'un item
-    public static final Item PINK_GARNET = registerItem("pink_garnet",Item::new, new Item.Settings());
-    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet",Item::new, new Item.Settings());
+    public static final Item PINK_GARNET = registerItem("pink_garnet", Item::new, new Item.Settings());
+    public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", Item::new, new Item.Settings());
 
-    public static final Item STAFF_CREATION_ITEM = registerItem("staff_creation_item", StaffCreationItem::new,new Item.Settings());
+    public static final Item STAFF_CREATION_ITEM = registerItem("staff_creation_item", StaffCreationItem::new, new Item.Settings());
+
+    public static final Item CAULIFLOWER = registerItem("cauliflower", Item::new, new Item.Settings()
+            .food(CommonFoodComponents.CAULIFLOWER, ConsumableComponent.builder().
+                    consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST
+                            , 200, 0), 1F))
+                    .build()));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
         final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(CivilizationReborn.MOD_ID, name));
         return Items.register(registryKey, factory, settings);
     }
 
-    public static void registerCommonItems(){
+    public static void registerCommonItems() {
         CivilizationReborn.LOGGER.info("Registering Mod Items for " + CivilizationReborn.MOD_ID);
 
         //On ajoute les items dans l'inventaire créatif
