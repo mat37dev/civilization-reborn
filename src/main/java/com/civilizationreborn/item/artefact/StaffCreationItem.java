@@ -3,15 +3,17 @@ package com.civilizationreborn.item.artefact;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
-
-import java.awt.*;
+import java.util.List;
 import java.util.Objects;
 
 public class StaffCreationItem extends Item {
@@ -46,5 +48,14 @@ public class StaffCreationItem extends Item {
         }
 
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.civilization-reborn.staff_creation_item"));
+        if(Screen.hasShiftDown()){
+            tooltip.add(Text.translatable("tooltip.civilization-reborn.staff_creation_item.advanced"));
+        }
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

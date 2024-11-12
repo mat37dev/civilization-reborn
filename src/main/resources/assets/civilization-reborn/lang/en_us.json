@@ -10,5 +10,8 @@
   "block.civilization-reborn.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
 
-  "itemgroup.civilization-reborn.test_pink_garnet": "Catégory Test"
+  "itemgroup.civilization-reborn.test_pink_garnet": "Catégory Test",
+
+  "tooltip.civilization-reborn.staff_creation_item": "It is with this wand that we generate villages. (shift for more information)",
+  "tooltip.civilization-reborn.staff_creation_item.advanced": "Right click on a gold block to use it."
 }

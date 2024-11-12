@@ -9,5 +9,8 @@
   "block.civilization-reborn.pink_garnet_block": "Bloc de Grenat Rose",
   "block.civilization-reborn.raw_pink_garnet_block": "Bloc de grenat rose brut",
 
-  "itemgroup.civilization-reborn.test_pink_garnet": "Catégorie Test"
+  "itemgroup.civilization-reborn.test_pink_garnet": "Catégorie Test",
+
+  "tooltip.civilization-reborn.staff_creation_item": "C'est avec cette baguette que l'on génère des villages. (shift pour plus d'information)",
+  "tooltip.civilization-reborn.staff_creation_item.advanced": "Clic droit sur un block d'or pour l'utiliser."
 }
